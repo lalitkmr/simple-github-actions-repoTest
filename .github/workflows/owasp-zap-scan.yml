@@ -1,4 +1,5 @@
 name: OWASP ZAP Integration with Github Actions
+
 on: [push]
 
 jobs:
@@ -9,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.10.0
         with:
